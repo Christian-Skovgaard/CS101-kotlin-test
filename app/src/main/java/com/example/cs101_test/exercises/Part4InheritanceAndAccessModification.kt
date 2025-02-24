@@ -10,7 +10,21 @@ object Part4InheritanceAndAccessModification {
     // Create 2 classes (WashingMachine and Refrigerator) that extend the Appliance class
     //      and add a method to show/print their unique features e.g. has a quick wash feature (showFeatures).
     //      The showFeatures method must print something and not be blank, but you can choose what you want it to print!
-
+    open class Appliance (val brand:String ,val powerConsumption:Int,var isOn:Boolean = false) {
+        fun turnOn () {isOn = true}
+        fun turnOff () {isOn = false}
+        override fun toString(): String {
+            return "[brand=$brand, powerConsumption=$powerConsumption, isOn=$isOn]"
+        }
+    }
+    class WashingMachine (brand:String ,powerConsumption:Int):Appliance(brand,powerConsumption) {
+        fun showFeatures() {
+            println("why does new washingmachines have build in wifi?, i do not want my washingmachine on facebook?!")}
+    }
+    class Refrigerator (brand:String ,powerConsumption:Int):Appliance(brand,powerConsumption) {
+        fun showFeatures() {
+            println("The showFeatures method must print something and not be blank, but you can choose what you want it to print!")}
+    }
 
     // ---------------------- EXERCISE 2
     // Create a base class called Employee with properties: name, position, and salary
@@ -19,7 +33,24 @@ object Part4InheritanceAndAccessModification {
     // Implement the method work() for all classes, which prints a message indicating the type of work the employee is doing
     // E.g. an Employee.work() should print one thing and Developer.work() another
     // The work() method must print something and not be blank, but you can choose what you want it to print!
-
+    open class Employee (val name:String,var position:String,var salary:Double) {
+        open fun work () {println("I work")}
+    }
+    class Manager (name:String,position:String,salary:Double):Employee(name,position,salary) {
+        override fun work () {
+            println("The work() method must print something and not be blank, but you can choose what you want it to print!")
+        }
+    }
+    class Developer (name:String,position:String,salary:Double):Employee(name,position,salary) {
+        override fun work () {
+            println("The work() method must print something and not be blank, but you can choose what you want it to print!")
+        }
+    }
+    class Intern (name:String,position:String,salary:Double):Employee(name,position,salary) {
+        override fun work () {
+            println("The work() method must print something and not be blank, but you can choose what you want it to print!")
+        }
+    }
 
     // ---------------------- EXERCISE 3
     // Create a class named Course to represent course information
@@ -38,7 +69,17 @@ object Part4InheritanceAndAccessModification {
     //             field = if (value in 0..150) value else 0
     //         }
     // }
+    class Course (val courseName:String,var instructor:String) {
+        var credits = 0
+            set(amount:Int) {if (amount in 1..5) {field = amount}}
 
+        var courseDuration:Int = credits * 15
+            get() {
+                courseDuration = credits * 15
+                return courseDuration
+            }
+
+    }
 
     // ---------------------- EXERCISE 4
     // Create a class Athlete with properties: id, name
@@ -46,6 +87,9 @@ object Part4InheritanceAndAccessModification {
     // To make calculateFitnessLevel easy to implement, just make it return an Int between 0 and 100 - you choose how to calculate it!
     // The class should have a public field fitnessLevel which uses the private function to return a result.
     // The setter for fitnessLevel should be private
-
+        class Athlete (val id:String,val name:String) {
+            var FitnessLevel = name.length
+            private fun calculateFitnessLevel () {FitnessLevel = name.length}
+        }
 
 }

@@ -27,15 +27,15 @@ fun main() {
 
     // ---------------------- EXERCISE 4
     println("Exercise 4: Complete the function to convert a string to uppercase and return it.")
-    // println(Part1Basics.convertToUpperCase("kotlin"))
+    println(Part1Basics.convertToUpperCase("kotlin"))
     // println("Expected output: KOTLIN")
 
     // ---------------------- EXERCISE 5
     println("Exercise 5: Write a function to check if a number is even or odd and return true if even and false if odd.")
-    // println(Part1Basics.isEven(2))
-    // println("Expected output: true")
-    // println(Part1Basics.isEven(3))
-    // println("Expected output: false")
+    println(Part1Basics.isEven(2))
+    println("Expected output: true")
+    println(Part1Basics.isEven(3))
+    println("Expected output: false")
 
     // ---------------------- EXERCISE 6
     println("Exercise 6: Create a function to find the second largest number in a list.")
@@ -49,13 +49,13 @@ fun main() {
 
     // ---------------------- EXERCISE 8
     println("Exercise 8: Create a function to find the maximum value in a list.")
-    // println(Part1Basics.findMax(listOf(1, 2, 3, 4, 5)))
-    // println("Expected output: 5")
+    println(Part1Basics.findMax(listOf(1, 2, 3, 4, 5)))
+    println("Expected output: 5")
 
     // ---------------------- EXERCISE 9
     println("Exercise 9: Create a function to get the value for a given key from a map.")
-    // println(Part1Basics.getValue(mapOf("a" to 1, "b" to 2, "c" to 3), "b"))
-    // println("Expected output: 2")
+    println(Part1Basics.getValue(mapOf("a" to 1, "b" to 2, "c" to 3), "b"))
+    println("Expected output: 2")
 
     // ---------------------- EXERCISE 10
     println("Exercise 10: Create a function that calculates the area of a rectangle given its length and width.")
@@ -73,8 +73,8 @@ fun main() {
 
     // ---------------------- EXERCISE 12
     println("Exercise 12: Create a function to calculate the average of an array of doubles.")
-    // println(Part1Basics.calculateAverage(arrayOf(1.0, 2.0, 3.0, 4.0, 5.0)))
-    // println("Expected output: 3.0")
+    println(Part1Basics.calculateAverage(arrayOf(1.0, 2.0, 3.0, 4.0, 5.0)))
+    println("Expected output: 3.0")
 
     // ---------------------- EXERCISE 13
     println("Exercise 13: Create a function that filters out negative numbers from a list.")
@@ -83,8 +83,9 @@ fun main() {
 
     // ---------------------- EXERCISE 14
     println("Exercise 14: Create a function that returns a map of characters to their frequency in a string. Ignore numbers, punctuation, and all that is not a character A-Z or a-z.")
-    // println(Part1Basics.charFrequency("hello, world"))
-    // println("Expected output: {h=1, e=1, l=3, o=2, w=1, r=1, d=1}")
+    println(Part1Basics.charFrequency("hello, world"))
+    println("Expected output: {h=1, e=1, l=3, o=2, w=1, r=1, d=1}")
+    println("hello".chars())
 
 
     println("\n--------------------------------------")
@@ -92,16 +93,16 @@ fun main() {
 
     // ---------------------- EXERCISE 1
     println("Exercise 1: Create a function that takes an integer as a parameter and returns 'Positive', 'Negative', or 'Zero'.")
-    // println(Part2ConditionalLogic.checkNumber(5))
-    // println("Expected output: Positive")
-    // println(Part2ConditionalLogic.checkNumber(-3))
-    // println("Expected output: Negative")
-    // println(Part2ConditionalLogic.checkNumber(0))
-    // println("Expected output: Zero")
+    println(Part2ConditionalLogic.checkNumber(5))
+    println("Expected output: Positive")
+    println(Part2ConditionalLogic.checkNumber(-3))
+    println("Expected output: Negative")
+    println(Part2ConditionalLogic.checkNumber(0))
+    println("Expected output: Zero")
 
     // ---------------------- EXERCISE 2
     println("Exercise 2: Create a function that takes a string and prints each character on a new line.")
-    // Part2ConditionalLogic.printChars("hello")
+    Part2ConditionalLogic.printChars("hello")
     // Expected output:
     // h
     // e
@@ -126,7 +127,7 @@ fun main() {
 
     // ---------------------- EXERCISE 6
     println("Exercise 6: Create a function that prints numbers from 1 to 10 with println(), but skips multiples of 3 using a loop.")
-    // Part2ConditionalLogic.printNumbersSkipMultiplesOf3()
+    Part2ConditionalLogic.printNumbersSkipMultiplesOf3()
     // Expected output:
     // 1
     // 2
@@ -138,10 +139,10 @@ fun main() {
 
     // ---------------------- EXERCISE 7
     println("Exercise 7: Create a function that takes a string and returns true if it is a palindrome, false otherwise.")
-    // println(Part2ConditionalLogic.isPalindrome("nurses run"))
-    // println("Expected output: true")
-    // println(Part2ConditionalLogic.isPalindrome("hello"))
-    // println("Expected output: false")
+    println(Part2ConditionalLogic.isPalindrome("nurses run"))
+    println("Expected output: true")
+    println(Part2ConditionalLogic.isPalindrome("hello"))
+    println("Expected output: false")
 
     // ---------------------- EXERCISE 8
     println("Exercise 8: Modify the function to have default values for both width and height and to return the area of the rectangle.")
@@ -154,12 +155,12 @@ fun main() {
 
     // ---------------------- EXERCISE 9
     println("Exercise 9: Create a function that takes a day of the week as a string and returns 'Weekday' or 'Weekend'.")
-    // println(Part2ConditionalLogic.dayType("Monday"))
-    // println("Expected output: Weekday")
-    // println(Part2ConditionalLogic.dayType("Saturday"))
-    // println("Expected output: Weekend")
-    // println(Part2ConditionalLogic.dayType("Funday"))
-    // println("Expected output: Invalid day")
+    println(Part2ConditionalLogic.dayType("Monday"))
+    println("Expected output: Weekday")
+    println(Part2ConditionalLogic.dayType("Saturday"))
+    println("Expected output: Weekend")
+    println(Part2ConditionalLogic.dayType("Funday"))
+    println("Expected output: Invalid day")
 
     // ---------------------- EXERCISE 10
     println("Exercise 10: Create a function that takes an integer year and returns true if it is a leap year, false otherwise.")
@@ -183,9 +184,9 @@ fun main() {
 
     // ---------------------- EXERCISE 1
     println("Exercise 1: Create a Book class with title, author, and price. Add a displayDetails method.")
-    // val book = Part3ClassesAndObjects.Book("CS101 testing", "Ane", 10.0)
-    // book.displayDetails()
-    // println("Expected output: CS101 testing, Ane, 10.0")
+    val book = Part3ClassesAndObjects.Book("CS101 testing", "Ane", 10.0)
+    book.displayDetails()
+    println("Expected output: CS101 testing, Ane, 10.0")
 
     // ---------------------- EXERCISE 2
     println("Exercise 2: Create a Student class with name, age, and grades. Add methods to addGrade, averageGrade, and displayDetails.")
